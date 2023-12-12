@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.GooglePageTest">
+      <class name="testScripts.LoginTest">
         <methods>
-          <include name="javaseachTest"/>
           <include name="setup"/>
-          <include name="end"/>
-          <include name="seleniumseachTest"/>
+          <include name="validLogin" invocation-numbers="0 1 2"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- testScripts.GooglePageTest -->
+      </class> <!-- testScripts.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
